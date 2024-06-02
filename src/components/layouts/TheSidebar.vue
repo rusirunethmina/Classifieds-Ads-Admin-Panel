@@ -1,12 +1,12 @@
 <template>
   <aside class="hidden w-64 bg-gray-800 sm:block">
     <div class="py-3 text-2xl uppercase text-center tracking-widest bg-gray-900 border-b-2 border-gray-800 mb-8">
-      <router-link to="/" class="text-white">Tailmin</router-link>
+      <router-link to="/dashboard" class="text-white">Tailmin</router-link>
     </div>
 
     <nav class="text-sm text-gray-300">
       <ul class="flex flex-col">
-        <li class="px-4 py-2 text-xs uppercase tracking-wider text-gray-500 font-bold">Section</li>
+        <li class="px-4 py-2 text-xs uppercase tracking-wider text-gray-500 font-bold">Users</li>
 
         <router-link v-slot="{ isExactActive, href, navigate }" to="/dashboard" custom>
           <li class="px-4 cursor-pointer" :class="[isExactActive ? 'bg-gray-500 text-gray-800' : 'hover:bg-gray-700']">
@@ -116,7 +116,7 @@
           </a>
         </li>
 
-        <li class="px-4 py-2 mt-2 text-xs uppercase tracking-wider text-gray-500 font-bold">Apps</li>
+        <li class="px-4 py-2 mt-2 text-xs uppercase tracking-wider text-gray-500 font-bold">Ads</li>
 
         <li class="px-4 cursor-pointer hover:bg-gray-700">
           <a href="#" class="py-2 flex items-center">

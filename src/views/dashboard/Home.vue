@@ -14,100 +14,64 @@
   <div class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-4 sm:px-8">
     <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
       <div class="p-4 bg-green-400">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-12 w-12 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       </div>
       <div class="px-4 text-gray-700">
-        <h3 class="text-sm tracking-wider">Total Member</h3>
+        <h3 class="text-sm tracking-wider">Total Users</h3>
         <p class="text-3xl">12,768</p>
       </div>
     </div>
 
     <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
       <div class="p-4 bg-blue-400">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-12 w-12 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
         </svg>
       </div>
       <div class="px-4 text-gray-700">
-        <h3 class="text-sm tracking-wider">Total Post</h3>
+        <h3 class="text-sm tracking-wider">Total Ads</h3>
         <p class="text-3xl">39,265</p>
       </div>
     </div>
 
     <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
       <div class="p-4 bg-indigo-400">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-12 w-12 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
         </svg>
       </div>
       <div class="px-4 text-gray-700">
-        <h3 class="text-sm tracking-wider">Total Comment</h3>
+        <h3 class="text-sm tracking-wider">Total Approved Ads</h3>
         <p class="text-3xl">142,334</p>
       </div>
     </div>
 
     <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
       <div class="p-4 bg-red-400">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-12 w-12 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
         </svg>
       </div>
       <div class="px-4 text-gray-700">
-        <h3 class="text-sm tracking-wider">Server Load</h3>
-        <p class="text-3xl">34.12%</p>
+        <h3 class="text-sm tracking-wider">Total Rejected Ads</h3>
+        <p class="text-3xl">142,334</p>
       </div>
     </div>
   </div>
 
   <div class="grid grid-cols-1 px-4 gap-4 mt-8 sm:grid-cols-3 sm:px-8">
     <div class="px-4 py-2 bg-white border rounded-md overflow-hidden shadow">
-      <h3 class="text-xl text-gray-600 mb-4">Page View</h3>
+      <h3 class="text-xl text-gray-600 mb-4">Total Ads</h3>
       <apexchart type="area" :height="300" :options="pageViewOptions" :series="pageViewSeries"></apexchart>
     </div>
 
@@ -118,7 +82,7 @@
 
     <div class="grid grid-rows-2 gap-4">
       <div class="px-4 py-2 bg-white border rounded-md shadow">
-        <h3 class="text-xl text-gray-600 mb-2">Popular Post</h3>
+        <h3 class="text-xl text-gray-600 mb-2">Popular Ads</h3>
 
         <div class="flex flex-col">
           <div class="align-middle inline-block min-w-full">
@@ -204,8 +168,7 @@
   <div class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-5 sm:px-8">
     <TabGroup>
       <div class="bg-white border rounded-lg shadow sm:col-span-2">
-        <div
-          class="
+        <div class="
             flex flex-col
             space-y-2
             items-center
@@ -215,31 +178,24 @@
             border-b-2
             text-gray-600
             sm:flex-row sm:justify-between
-          "
-        >
-          <h3 class="tracking-wider">Top Author</h3>
+          ">
+          <h3 class="tracking-wider">Top Users</h3>
           <TabList class="flex space-x-1">
             <Tab v-slot="{ selected }">
-              <button
-                class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
-                :class="selected ? 'bg-blue-400 text-white' : ''"
-              >
+              <button class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
+                :class="selected ? 'bg-blue-400 text-white' : ''">
                 Today
               </button>
             </Tab>
             <Tab v-slot="{ selected }">
-              <button
-                class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
-                :class="selected ? 'bg-blue-400 text-white' : ''"
-              >
+              <button class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
+                :class="selected ? 'bg-blue-400 text-white' : ''">
                 Yesterday
               </button>
             </Tab>
             <Tab v-slot="{ selected }">
-              <button
-                class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
-                :class="selected ? 'bg-blue-400 text-white' : ''"
-              >
+              <button class="px-4 py-2 text-xs rounded-md hover:bg-blue-400 hover:text-white"
+                :class="selected ? 'bg-blue-400 text-white' : ''">
                 Last 7 Days
               </button>
             </Tab>
@@ -266,35 +222,17 @@
                   </td>
                   <td class="hidden py-2 space-x-2 text-right sm:table-cell">
                     <button class="p-1 rounded-md bg-green-500 text-white hover:bg-green-600">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                        />
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                       </svg>
                     </button>
                     <button class="p-1 rounded-md bg-red-500 text-white hover:bg-red-600">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                        />
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                       </svg>
                     </button>
                   </td>
@@ -308,7 +246,7 @@
 
     <div class="bg-white border rounded-lg shadow sm:col-span-3">
       <div class="flex justify-between items-center px-4 py-2 mb-2 border-b-2 text-gray-600">
-        <h3 class="tracking-wider">Recent Sales</h3>
+        <h3 class="tracking-wider">Recent Ads</h3>
         <button class="border rounded-sm bg-gray-200 px-4 py-2 text-xs hover:bg-gray-300">View All</button>
       </div>
       <div class="px-4">
@@ -364,9 +302,7 @@
             </div>
             <div>
               <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     inline-flex
                     items-center
@@ -377,24 +313,15 @@
                     font-medium
                     text-gray-500
                     hover:bg-gray-50
-                  "
-                >
+                  ">
                   <span class="sr-only">Previous</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                   </svg>
                 </a>
                 <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" -->
-                <a
-                  href="#"
-                  aria-current="page"
-                  class="
+                <a href="#" aria-current="page" class="
                     z-10
                     bg-indigo-50
                     border-indigo-500
@@ -407,13 +334,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   1
                 </a>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     border-gray-300
                     text-gray-500
                     hover:bg-gray-50
@@ -425,13 +349,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   2
                 </a>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     border-gray-300
                     text-gray-500
                     hover:bg-gray-50
@@ -444,12 +365,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   3
                 </a>
-                <span
-                  class="
+                <span class="
                     relative
                     inline-flex
                     items-center
@@ -459,13 +378,10 @@
                     text-sm
                     font-medium
                     text-gray-700
-                  "
-                >
+                  ">
                   ...
                 </span>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     border-gray-300
                     text-gray-500
                     hover:bg-gray-50
@@ -478,13 +394,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   8
                 </a>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     border-gray-300
                     text-gray-500
                     hover:bg-gray-50
@@ -496,13 +409,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   9
                 </a>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     border-gray-300
                     text-gray-500
                     hover:bg-gray-50
@@ -514,13 +424,10 @@
                     border
                     text-sm
                     font-medium
-                  "
-                >
+                  ">
                   10
                 </a>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     inline-flex
                     items-center
@@ -532,16 +439,10 @@
                     font-medium
                     text-gray-500
                     hover:bg-gray-50
-                  "
-                >
+                  ">
                   <span class="sr-only">Next</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </a>
