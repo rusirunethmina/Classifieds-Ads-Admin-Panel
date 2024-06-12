@@ -10,9 +10,10 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: () => import('@/views/Dashboard.vue'),
+    redirect: '/dashboard',
     children: [
       {
-        path: '',
+        path: '/dashboard',
         component: () => import('@/views/dashboard/Home.vue'),
       },
       {

@@ -1,6 +1,7 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-    <div class="max-w-md w-full">
+  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4 login-container">
+    <div class="max-w-md w-full login-box">
       <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Sign in to your dashboard</h2>
 
       <form class="space-y-4" @submit.prevent="$router.push({ name: 'dashboard' })">
@@ -80,5 +81,33 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      email: "",
+      password: "",
+      is_remember: false,
+    }
+  },
+}
 </script>
+
+
+<style scoped>
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/src/assets/backgroumd.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+</style>
