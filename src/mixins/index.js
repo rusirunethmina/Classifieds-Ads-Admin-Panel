@@ -1,3 +1,3 @@
-import mixin from './mixin'
+import mixin from './mixin';
 
-export const myMixin = mixin
+export const myMixin = mixin;
