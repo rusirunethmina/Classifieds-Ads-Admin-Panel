@@ -56,7 +56,7 @@
         </div>
 
         <div>
-          <button type="submit" class="
+          <button @click="showAlert" type="submit" class="
               group
               relative
               w-full
@@ -88,6 +88,12 @@ export default {
       password: "",
       is_remember: false,
     }
+  },
+  methods: {
+    showAlert() {
+      // Use sweetalert2
+      this.$swal('Hello Vue world!!!');
+    },
   },
 }
 </script>
