@@ -91,8 +91,7 @@ export default {
   },
   methods: {
     showAlert() {
-      // Use sweetalert2
-      this.$swal('Hello Vue world!!!');
+
     },
   },
 }
