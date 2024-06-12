@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import axios from 'axios'
 
 const service = axios.create({
@@ -5,22 +6,22 @@ const service = axios.create({
   headers: {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
+    'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'
   },
-  timeout: 5000,
+  timeout: 5000
 })
 service.interceptors.request.use(
-  (config) => {
+  config => {
     return config
   },
-  (error) => {
+  error => {
     console.log(error)
     Promise.reject(error)
   }
 )
 service.interceptors.response.use(
-  (response) => response,
-  (error) => {
+  response => response,
+  error => {
     console.log('err' + error)
     // Message({
     //   message: error.message,
