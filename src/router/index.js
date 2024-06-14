@@ -17,6 +17,11 @@ const routes = [
         component: () => import('@/views/dashboard/Home.vue'),
       },
       {
+        path: '/ads/list',
+        name: 'adsList',
+        component: () => import('@/views/dashboard/ads/AdsList.vue'),
+      },
+      {
         path: '/users',
         name: 'user-list',
         component: () => import('@/views/dashboard/users/UserList.vue'),
