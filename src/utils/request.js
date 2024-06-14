@@ -51,6 +51,9 @@ service.interceptors.response.use(
   },
   error => {
     console.log('err' + error)
+      if (error.code === 'ECONNABORTED') {
+        console.log('Request timed out');
+  }
     // Handle errors globally
     if (error.response.status === 401) {
       // Redirect to login page or refresh token
