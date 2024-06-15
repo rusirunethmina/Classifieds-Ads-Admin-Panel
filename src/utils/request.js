@@ -3,7 +3,8 @@ import axios from 'axios'
 
 const service = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API,
-  baseURL: 'https://autosoukbackend.gethorcrm.com/api/',
+  // baseURL: 'https://autosoukbackend.gethorcrm.com/api/',
+  baseURL: 'http://127.0.0.1:8000/api/',
   headers: {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
@@ -16,9 +17,12 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     // Add an Authorization header to every request
-    const token = localStorage.getItem('token');
-    if (token) {
-      if (!headers.Authorization) config.headers['Authorization'] = `Bearer ${token}`;
+    const token = localStorage.getItem('userInfo');
+    const user = JSON.parse(token);
+    const tokeen = user.access_token;
+    if (tokeen) {
+      config.headers['Authorization'] = `Bearer ${tokeen}`;
+      // if (!headers.Authorization) config.headers['Authorization'] = `Bearer ${tokeen}`;
     }
     return config
   },

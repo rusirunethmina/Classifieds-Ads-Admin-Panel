@@ -11,6 +11,7 @@ import api from './api'
 const app = createApp(App)
 app.config.globalProperties.$request = request
 app.config.globalProperties.$api = api
+app.config.globalProperties.$base_url = 'http://127.0.0.1:8000';
 app.use(router)
 app.use(VueSweetalert2)
 app.mount('#app')

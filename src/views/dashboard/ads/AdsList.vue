@@ -61,34 +61,31 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                    <tr v-for="user in userList" :key="user.id">
+                    <tr v-for="user in adsList" :key="user.id">
                         <td class="p-2">
                             <input type="checkbox"
                                 class="h-5 w-5 text-blue-500 border-gray-300 rounded cursor-pointer focus:ring-0"
                                 :checked="selectAll" />
                         </td>
                         <td class="flex items-center py-4">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" :src="user.avatar"
-                                alt="" />
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                                :src="$base_url + '/' + user.advertisement_cover_image" alt="" />
                             <div class="px-4">
                                 <div>
-                                    <a href="/ads/more/details" @click="adsMoreDetils()"
-                                        class="text-gray-600 font-bolder">{{ user.name}}</a>
+                                    <a href="/ads/more/details" class="text-gray-600 font-bolder">{{ user.title }}</a>
                                 </div>
                                 <!-- <div class="font-bold text-sm">
                                     {{ user.email }}
                                 </div> -->
                             </div>
                         </td>
-                        <td>{{ user.role }}</td>
-                        <td>0775093711</td>
+                        <td>{{ user.model }}</td>
+                        <td>{{ user.mobile }}</td>
                         <td>
-                            <span v-if="user.isActive"
-                                class="px-2 py-1 rounded text-xs text-white bg-green-500">approved</span>
-                            <span v-else class="px-2 py-1 rounded text-xs text-white bg-red-500">pending</span>
+                            <span class="px-2 py-1 rounded text-xs text-white bg-red-500">{{ user.status }}</span>
                         </td>
-                        <td>{{ user.lastActivity }}</td>
-                        <td>{{ user.joinDate }} <br /> 8 Min ago</td>
+                        <td>{{ user.location }}</td>
+                        <td> <br /> 8 Min ago</td>
                         <td class="text-right">
                             <Menu as="div" class="relative inline-block text-left">
                                 <div>
@@ -230,7 +227,8 @@
 <script>
 import userList from '@/data/users/userList.json'
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { ref } from 'vue'
+import { ref, onBeforeMount } from 'vue'
+import api from '@/api/index'; // Adjust the path to your API service
 
 export default {
     components: {
@@ -243,11 +241,20 @@ export default {
     setup() {
         const selectAll = ref(false)
 
-        const adsMoreDetils = () => {
-        };
+        const adsList = ref([]);
+
+
+        onBeforeMount(() => {
+            api.getAdsList().then((res) => {
+                adsList.value = res.data.data;
+            }).catch((error) => {
+                console.error('Failed to fetch ads list', error);
+            });
+        });
+
 
         return {
-            adsMoreDetils,
+            adsList,
             userList,
             selectAll,
         }

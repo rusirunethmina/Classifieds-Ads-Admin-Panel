@@ -35,9 +35,17 @@ export default {
             mock: true
         })
     },
+    getAdsMoreDetails(params) {
+        return request({
+            url: '/V1/admin/ads/show',
+            method: 'post',
+            data: params,
+            mock: true
+        })
+    },
     changeAdsStatus(params) {
         return request({
-            url: '/V1/admin/ads/status/change',
+            url: '/V1/admin/ads/changeStatus',
             method: 'post',
             data: params,
             mock: false
