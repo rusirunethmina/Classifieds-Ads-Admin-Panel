@@ -19,6 +19,14 @@ export default {
             mock: false
         })
     },
+    logout() {
+        return request({
+            url: '/V1/logout',
+            method: 'post',
+            data: params,
+            mock: false
+        })
+    },
     getAdsList() {
         return request({
             url: '/V1/admin/ads/list',
