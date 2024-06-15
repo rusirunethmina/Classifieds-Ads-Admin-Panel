@@ -21,6 +21,11 @@ const routes = [
         name: 'adsList',
         component: () => import('@/views/dashboard/ads/AdsList.vue'),
       },
+            {
+        path: '/ads/more/details',
+        name: 'adsMoreDetails',
+        component: () => import('@/views/dashboard/ads/AdsMoreDetails.vue'),
+      },
       {
         path: '/users',
         name: 'user-list',

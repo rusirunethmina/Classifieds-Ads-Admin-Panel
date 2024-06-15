@@ -72,7 +72,8 @@
                                 alt="" />
                             <div class="px-4">
                                 <div>
-                                    <a href="#" class="text-gray-600 font-bolder">{{ user.name }}</a>
+                                    <a href="/ads/more/details" @click="adsMoreDetils()"
+                                        class="text-gray-600 font-bolder">{{ user.name}}</a>
                                 </div>
                                 <!-- <div class="font-bold text-sm">
                                     {{ user.email }}
@@ -242,10 +243,15 @@ export default {
     setup() {
         const selectAll = ref(false)
 
+        const adsMoreDetils = () => {
+        };
+
         return {
+            adsMoreDetils,
             userList,
             selectAll,
         }
     },
+
 }
 </script>
